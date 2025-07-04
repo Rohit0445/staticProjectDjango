@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid{
+background-color: black;
+gap: 50px;
+height: 60px;
+width: 100%;
+padding-left: 50px;
+padding-right: 50px;
+
+
+} 
+
+
+
+#navbarNav ul {
+    gap: 50px;
+}
+
+
+#second-nav{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#second-nav ul{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 50px;
+    color: rgb(138, 136, 136);
+}
+
+#section1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:50px ;
+    margin-bottom: 50px;
+}
+
+#section1 h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#input1{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(235, 233, 233);
+    
+}
+
+#input2{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(235, 233, 233);
+}
+
+#See-Prices{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#section1 button{
+    width: 170px;
+    height: 100px;
+    background-color: rgb(235, 233, 233);
+    border-radius: 10px;
+}
+
+#dateinp{
+    width: 200px;
+    background-color: rgb(235, 233, 233);
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+#timeinp{
+    width: 200px;
+    background-color: rgb(235, 233, 233);
+    height: 50px;
+    border-radius: 10px;
+
+
+}
+
+#nextbtn{
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+#section2{
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+
+#Plan-for-later{
+    
+    border-radius: 20px;
+    background-color: #9DCDD6;
+    width: 800px;
+    padding: 30px;
+    /* background-image: url("static/images/section2img.png"); */
+}
+
+#Plan-for-later img{
+    position:absolute;
+    left: 641px;
+    top: 603px;
+}
+
+
+#Benefits{
+    width: 300px;
+    height: 350px;
+    /* border: 1px solid gray; */
+}
