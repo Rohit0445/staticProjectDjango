@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block title %}
@@ -6,10 +6,214 @@ landing
 {% endblock title %}
 
 {% block css %}
-  {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+
 {% endblock css %}
 
 {% block content   %}
-<h1> This is landing page Data!</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: aliceblue;">UBER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Home</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">About</a>
+          
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">Ride</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">Drive</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: aliceblue;">Business</a>
+        </li>
+      </ul>
+      
+    </div>
+
+    <div  id="navbarNav">
+          <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">LOGIN</a>
+          
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">SIGNUP</a>
+          
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="second-nav">
+    <h3>Ride</h3>
+    <ul>
+        <li>Request a Ride</li>
+        <li>Reserve a ride</li>
+        <li>See prices</li>
+        <li>Explore ride options</li>
+        <li>Airport rides</li>
+
+    </ul>
+</div>
+
+<div id="section1">
+    <div>
+        <h1>Request a ride for <br> now or later</h1><br>
+        <p>Up to 50% off your first 5 Uber rides. T&Cs apply.* <br> *Valid within 15 days of signup.</p>
+
+        <form action="">
+            <input type="text" value="" id="input1" placeholder="ENTER PickUp Location"><br> <br>
+            <input type="text" value="" id="input2" placeholder="ENTER  Destination"><br><br>
+            <input type="submit" name="" id="See-Prices" value="See Prices">
+        </form>
+    
+    
+    </div>
+    <div>
+        <h3>Suggestions</h3> <br>
+        <button>Ride</button>
+        <button>Reverse</button>
+        <button>Intercity</button><br><br>
+        <button>Courier</button>
+        <button>Rentals</button>
+        <button>Moto</button>
+    </div>
+</div>
+
+<div id="section2">
+    
+    <div id="Plan-for-later">
+        <h1>Plan for later</h1><br><br>
+        <h1>Get your ride right <br> with Uber Reserve</h1>
+        
+        <h5>Choose date and time</h5>
+
+        <form action="">
+            <input type="text" name="" id="dateinp" placeholder="DATE">
+            <input type="text" id="timeinp" placeholder="TIME"><br><br>
+            <input type="submit" name="" id="nextbtn" value="Next">
+        </form>
+        <div><img src="static/images/section2img.png" alt=""></div>
+
+
+
+    </div>
+
+
+    <div id="Benefits">
+       
+           
+        <h4>Benefits</h4>
+        
+
+        <ul>
+            <li>Choose your exact pickup time up to 90 days in advance.</li><br><br>
+            <li>Extra wait time included to meet your ride.</li><br><br>
+            <li>Cancel at no charge up to 60 minutes in advance.</li><br><br>
+        </ul>
+ 
+        
+
+    </div>
+</div>
+
+<div id="section3">
+
+  <div id="section3-div1">
+    <img src="static/images/uberimage1.png" alt="">
+
+  </div>
+
+  <div id="section3-div2">
+
+    <h1>Ride with friends <br> seamlessly</h1> <br> <br>
+
+    <h6>Riding with friends just got easier: set up a group ride in the <br> Uber app, invite your friends, and arrive at your destination. <br> Friends who ride together save together.</h6>
+    <br><br><br>
+     <h6 style="text-decoration: underline;">Learn More</h6>
+
+  </div>
+
+</div>
+
+<h1 id="use-uber">Use the Uber app to help you travel your way</h1>
+
+<div id="section4">
+
+  <div id="section4-div1">
+    <img src="static/images/section4img1.png" alt=""><br><br>
+    <h5>Ride options</h5><br>
+    <h6>There’s more than one way to move with Uber, no <br> matter where you are or where you’re <br> headed next.</h6><br>
+    <input type="submit" value="Search ride options">
+
+  </div>
+
+  <div id="section4-div2">
+    <img src="static/images/section4img2.png" alt=""><br><br>
+    <h5>700+ airports</h5><br>
+    <h6>You can request a ride to and from most major <br> airports. Schedule a ride to the airport for one <br> less thing to worry about.</h6><br>
+    <input type="submit" value="Search airports">
+     
+  </div>
+
+  <div id="section4-div3">
+    <img src="static/images/section4img3.png" alt=""><br><br>
+    <h5>15,000+ cities</h5><br>
+    <h6>The app is available in thousands of cities <br> worldwide, so you can request a ride even when <br> you’re far from home.</h6><br>
+    <input type="submit" value="search cities">
+     
+
+  </div>
+
+</div>
+
+<div id="section5">
+   
+  <div id="section5div1">
+    <h1>Looking for business <br> solutions?</h1><br><br>
+    <h6>Get information about how companies leverage Uber for <br><br> Business: </h6> <br>
+    <ul>
+      <li>Business travel</li><br>
+      <li>Courtesy rides </li><br>
+      <li>Meal programs </li><br>
+      <li>Item delivery</li><br>
+    </ul>
+
+
+  </div>
+
+  <div id="section5div2">
+    <img src="static/images/section5img.png" alt="">
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
  
 {% endblock content  %}
