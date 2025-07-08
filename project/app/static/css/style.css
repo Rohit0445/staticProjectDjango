@@ -125,7 +125,7 @@ padding-right: 50px;
 #Plan-for-later img{
     position:absolute;
     left: 617px;
-    top: 604px;
+    top: 638px;
 }
 
 
@@ -245,6 +245,26 @@ padding-right: 50px;
     width: 500px;
     height: 400px;
     padding-top: 100px;
+}
+
+footer h1,p{
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+#footersection{
+   
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+}
+
+#footersection h3{
+     margin-bottom: 30px;
+}
+
+#footersection ul {
+    list-style: none;
 }
 
 
