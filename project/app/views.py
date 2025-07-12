@@ -9,7 +9,7 @@ def landingpage(req):
 
 
 def register(req):
-    return render(req,'register.html',{'register':'register'})
+    return render(req,'register.html')
 
 
 def registerdata(req):
@@ -28,3 +28,5 @@ def registerdata(req):
         return render(req,'landing.html',{'msg':msg})
 
 
+def login(req):
+    return render(req,'login.html')
