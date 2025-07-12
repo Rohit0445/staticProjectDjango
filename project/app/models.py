@@ -8,4 +8,6 @@ class Student(models.Model):
     password = models.CharField(max_length=8)
     cpass = models.CharField(max_length=8)
     image = models.ImageField(upload_to='image/')
-    document = models.FileField(upload_to='file/') 
+    document = models.FileField(upload_to='file/')  
+
+    

@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100%;
+    align-content: center;
+}
+
+#RegistrationForm{
+    height: 600px;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+
+    position: relative;
+    left: 550px;
+    top: 50px;
+
+    
+   /* border: 2px solid black; */
+}
+
+#Registerbtn{
+
+    background-color: black;
+    color: white;
+
+}
+
+
+#Registerbtn:hover{
+
+    background-color: rgb(255, 237, 237);
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+input{
+    height: 35px;
+    width: 350px;
+    border-radius: 10px;
+}

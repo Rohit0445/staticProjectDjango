@@ -13,7 +13,7 @@ def register(req):
 
 
 def registerdata(req):
-    
+     
     if req.method=='POST':
         n=req.POST.get('name')
         e=req.POST.get('email')

@@ -1,17 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
 
+{% block title %}
+Register
+{% endblock title %}
+
+{% block css %}
+  
+  {% comment %} <link rel="stylesheet" href="static/css/register.css"> {% endcomment %}
+  {% comment %} <link rel="stylesheet" href="static/css/style.css"> {% endcomment %}
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+
+{% endblock css %}
+
+
+
+{% block content %}
+
+<nav>
+  <h1>UBER</h1>
+</nav>
+
+    
 {% if register %} 
-    registration Form
-    <form action="{% url 'registerdata' %}" method="post" enctype="multipart/form-data">
-       {% csrf_token %}
-       Name : <input type="text" name="name"><br><br>
-       Email: <input type="email" name="email"><br><br>
-       Contact: <input type="number" name="number"><br><br>
-       password: <input type="text" name="password"><br><br>
-       confirm password : <input type="text" name="cpass"><br><br>
-       Image: <input type="file" name="image"><br><br>
-       Document: <input type="file" name="file"> <br><br>
-       <input type="submit" value="register" >
 
-    </form>
+<div id="RegistrationForm">
+    
+            <form action="{% url 'registerdata' %}" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              Name <br> <input type="text" name="name" placeholder="Enter Your Name" required><br><br>
+              Email <br> <input type="email" name="email" placeholder="Enter Your Email" required><br><br>
+              Contact <br> <input type="number" name="number" placeholder="Enter Your Contact" required ><br><br>
+              password <br> <input type="text" name="password" placeholder="Create password"><br><br>
+              confirm password  <br> <input type="text" name="cpass" placeholder="Enter Confirm Password "><br><br>
+              Your Image <br> <input type="file" name="image"><br>
+              Adhaar  <br> <input type="file" name="file"> <br>
+              <input type="submit" value="register" id="Registerbtn">
+ 
+            </form>
+
+</div>
+
 {% endif %}
+
+
+
+
+
+  
+{% endblock content %}
+
+
+
+
 
