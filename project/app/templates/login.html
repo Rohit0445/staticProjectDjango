@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+login
+{% endblock title %}
+
+
+{% block css %}
+  
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  
+{% endblock css %}
+
+{% block content %}
+
+
+<nav>
+  <h1>UBER</h1>
+</nav>
+
+<div id="logindiv">
+
+    <form action="">
+
+        <input type="text" placeholder="Enter Username"><br><br>
+        <input type="text" placeholder="Enter Password">
+    </form>
+
+
+</div>
+
+
+
+
+
+{% endblock content %}
