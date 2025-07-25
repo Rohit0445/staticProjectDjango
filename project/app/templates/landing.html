@@ -13,52 +13,53 @@ landing
 {% endblock css %}
 
 {% block content   %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark " >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: aliceblue;">UBER</a>
+    <a class="navbar-brand me-3" href="#" style="color: aliceblue;">UBER</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav  gap-5">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'ride' %}" style="color: aliceblue;">Ride</a>
         </li>
 
          <li class="nav-item">
-          <a class="nav-link" href="#" style="color: aliceblue;">About</a>
-          
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: aliceblue;">Ride</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#" style="color: aliceblue;">Drive</a>
           
         </li>
-        
+
         <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">About</a>
+        </li>
+        
+        
+        <li class="nav-item ">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: aliceblue;">Business</a>
         </li>
       </ul>
-      
-    </div>
 
-    <div  id="navbarNav">
-          <ul class="navbar-nav">
-        <li class="nav-item">
+
+      <ul class="navbar-nav gap-5  position-relative start-50">
+        <li class="nav-item border rounded">
           <a class="nav-link" href="{% url 'login' %}" style="color: aliceblue;">LOGIN</a>
           
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item border rounded-2">
           <a class="nav-link" href="{% url 'register' %}" style="color: aliceblue;">SIGNUP</a>
           
         </li>
        
-      </ul>
+      </ul> 
+
+                
+
+      
     </div>
+
+
   </div>
 </nav>
 
@@ -111,7 +112,7 @@ landing
             <input type="text" id="timeinp" placeholder="TIME"><br><br>
             <input type="submit" name="" id="nextbtn" value="Next">
         </form>
-        <div><img src="static/images/section2img.png" alt=""></div>
+        <!-- <div><img src="static/images/section2img.png" alt=""></div> -->
 
 
 
@@ -206,7 +207,7 @@ landing
 
 </div>
 
-<footer>
+<footer class="border">
   <h1>UBER</h1>
   <p>Visit Help Center</p>
 

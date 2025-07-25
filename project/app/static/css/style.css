@@ -1,33 +1,20 @@
-*{
+body{
   margin: 0px;
   padding: 0px;
 }
 
-.container-fluid{
-background-color: black;
-gap: 50px;
-height: 60px;
-width: 100%;
-padding-left: 50px;
-padding-right: 50px;
 
-
-} 
-
-
-
-#navbarNav ul {
-    gap: 50px;
-}
 
 
 #second-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
     padding-top: 5px;
     padding-left: 50px;
     padding-right: 50px;
+    /* border: 2px solid red ; */
+
 }
 
 #second-nav ul{
@@ -35,15 +22,22 @@ padding-right: 50px;
     display: flex;
     /* justify-content: space-evenly; */
     gap: 50px;
+    /* border: 2px solid red ; */
+    
     color: rgb(138, 136, 136);
 }
 
 #section1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top:50px ;
     margin-bottom: 50px;
+    /* border: 2px solid red ; */
+
 }
+
+
+
 
 #section1 h1{
     font-weight: bold;
@@ -109,6 +103,8 @@ padding-right: 50px;
 #section2{
     display: flex;
     justify-content:space-evenly;
+    /* border: 2px solid red ; */
+
     
 }
 
@@ -116,29 +112,35 @@ padding-right: 50px;
     
     border-radius: 20px;
     background-color: #9DCDD6;
-    width: 800px;
+    width: 600px;
     padding: 30px;
     /* background-image: url("static/images/section2img.png"); */
+    /* border: 2px solid red ; */
+
 }
 
-#Plan-for-later img{
+/* #Plan-for-later img{
     position:absolute;
     left: 617px;
     top: 638px;
-}
+} */
 
 
 #Benefits{
-    width: 332px;
+    /* width: 332px; */
     height: 350px;
     /* border: 1px solid gray; */
+    /* border: 2px solid red ; */
+
 }
 
 
  #section3{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 100px;
+    /* border: 2px solid red ; */
+
 
 
 } 
@@ -147,6 +149,8 @@ padding-right: 50px;
 #section3-div1{
     width: 400px;
     height: 400px;
+    /* border: 2px solid red ; */
+
     
 
 } 
@@ -159,18 +163,25 @@ padding-right: 50px;
 
 #section3-div2{
     margin-top: 50px;
+    /* border: 2px solid red ; */
+
 }
 
 #use-uber{
     margin-top:150px ;
-    position: relative;  
-    left: 150px; 
+    /* position:static;  
+    right: 50px;  */
+    margin-left: 150px;
+    
 }
 
 #section4{
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
+    /* border: 2px solid red ; */
+    
+
 }
 
 #section4 input{
@@ -184,7 +195,9 @@ padding-right: 50px;
 
 #section4-div1{
     width: 400px;
-    height: 620px;
+    height: 650px;
+    /* border: 2px solid red ; */
+
 }
 
 #section4-div1 img{
@@ -195,7 +208,10 @@ padding-right: 50px;
 
 #section4-div2{
     width: 400px;
-    height: 620px;
+    height: 650px;
+    /* border: 2px solid red ; */
+
+    
 }
 
 #section4-div2 img{
@@ -207,7 +223,9 @@ padding-right: 50px;
 
 #section4-div3{
     width: 400px;
-    height: 620px;
+    height: 650px;
+    /* border: 2px solid red ; */
+    
     /* border: 1px solid ; */
 }
 
@@ -219,24 +237,29 @@ padding-right: 50px;
 #section5{
     display: flex;
     justify-content: space-evenly;
+    /* border: 2px solid red ; */
 
     /* margin: 100px; */
     padding-top: 50px;
     background-color: black;
     color: white;
-    width: 100%;
+    /* width: 100%; */
 
 }
 
 #section5div1{
-    width: 400px;
+    /* width: 400px; */
     height: 500px;
+    /* border: 2px solid red ; */
+
 }
 
 
 #section5div2{
-    width: 400px;
+    /* width: 400px; */
     height: 500px;
+    /* border: 2px solid red ; */
+
 }
 
 
@@ -256,6 +279,8 @@ footer h1,p{
    display: flex;
    justify-content: space-around;
    list-style: none;
+  /* border: 2px solid red ; */
+
 }
 
 #footersection h3{
@@ -268,4 +293,119 @@ footer h1,p{
 
 
 
+
+
+
+/* Mobile Devices (up to 576px) */
+@media (max-width: 576px) {
+  #second-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-item{
+    width: 60px;
+    
+  }
+
+  
+
+  #section1,
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #footersection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section1 > div,
+  #section2 > div,
+  #section3-div1,
+  #section3-div2,
+  #section4 > div,
+  #section5 > div {
+    width: 90%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #section1 form input,
+  #section2 form input,
+  #section4 input,
+  #section5 input {
+    width: 100%;
+  }
+
+  #section3-div1 img,
+  #section4 img,
+  #section5div2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  nav .navbar-collapse,
+  nav #navbarNav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #use-uber{
+    margin-left: 30px;
+  }
+}
+
+/* Tablet Devices (577px to 768px) */
+@media (max-width: 768px) {
+  #section1,
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #footersection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+   .nav-item{
+    width: 60px;
+    
+  }
+
+  #section1 > div,
+  #section2 > div,
+  #section3-div1,
+  #section3-div2,
+  #section4 > div,
+  #section5 > div {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Desktop Devices (769px and above) */
+@media (min-width: 769px) {
+  #section1,
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #footersection {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  #section1 > div,
+  #section2 > div,
+  #section3-div1,
+  #section3-div2,
+  #section4 > div,
+  #section5 > div {
+    width: 48%;
+  }
+}
 

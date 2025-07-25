@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Ride
+{% endblock title %}
+
+
+
+{% block css %}
+
+  <link rel="stylesheet" href="{% static 'css/ride.css' %}">
+
+{% endblock css %}
+
+
+
+
+{% block content %}
+
+<nav>
+    <h1>UBER</h1>
+
+    <ul>
+        <li>Trip</li>
+        <li>Rentals</li>
+        <li>Couriers</li>
+    </ul>
+</nav>
+
+
+<div id="maindiv">
+    <div id="div1">
+        <h3>Find A Trip</h3> 
+
+        <input type="text" placeholder="PickUp Location"><br><br>
+        <input type="text" placeholder="Drop Location"><br><br>
+        <input type="Submit" placeholder="Search"><br><br>
+
+    
+    
+    </div>
+    <div id="div2"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46459.89777517461!2d77.76624141953803!3d23.514959728995912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752998692225!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+
+
+
+
+
+{% endblock content %}
