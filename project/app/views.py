@@ -18,3 +18,8 @@ def login(req):
 
 def ride(req):
     return render(req,'ride.html')
+
+
+
+def drive(req):
+    return render(req,'drive.html')

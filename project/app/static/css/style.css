@@ -33,6 +33,7 @@ body{
     padding-top:50px ;
     margin-bottom: 50px;
     /* border: 2px solid red ; */
+    margin-left: 150px;
 
 }
 
@@ -103,6 +104,8 @@ body{
 #section2{
     display: flex;
     justify-content:space-evenly;
+    margin-left: 150px;
+
     /* border: 2px solid red ; */
 
     
@@ -139,6 +142,8 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    margin-left: 150px;
+
     /* border: 2px solid red ; */
 
 
@@ -308,7 +313,6 @@ footer h1,p{
     
   }
 
-  
 
   #section1,
   #section2,
@@ -318,6 +322,7 @@ footer h1,p{
   #footersection {
     flex-direction: column;
     align-items: center;
+     margin: 30px;
   }
 
   #section1 > div,
@@ -329,6 +334,7 @@ footer h1,p{
     width: 90%;
     margin: 10px 0;
     text-align: center;
+   
   }
 
   #section1 form input,

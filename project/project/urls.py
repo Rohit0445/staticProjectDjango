@@ -23,6 +23,7 @@ urlpatterns = [
     path('',views.landingpage,name='landingpage'),
     path('register/',views.register,name='register'),
     path('login/',views.login,name='login') ,
-    path('ride/',views.ride,name='ride') 
+    path('ride/',views.ride,name='ride') ,
+    path('drive/',views.drive,name='drive') 
 ]
  
