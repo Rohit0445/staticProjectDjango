@@ -1,43 +1,132 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 {% load static %}
-  
-  
-  
-{% block title %}
 
-    drive  
+ {% block title %}
+  drive 
+ {% endblock title %} 
 
-{% endblock title %}
-
- 
 {% block css %}
 
-  <link rel="stylesheet" href="{% static 'css/drive.css' %}">
+<link rel="stylesheet" href="{% static 'css/drive.css' %}" />
 
-    
-
-{% endblock css %}
-
+{% endblock css %} 
 
 
 {% block content %}
 
-
 <nav>
-    <h1>UBER</h1>
+  <h1>UBER</h1>
 
+  <ul>
+    <li><a href="{% url 'landingpage' %}">Home</a></li>
+  </ul>
 </nav>
 
 <div id="min-nav">Drive</div>
 
+<div id="section-2">
+  <div id="section-2-div1">
+    <h1>
+      Drive when you <br />
+      want, make what <br />
+      you need
+    </h1>
+    <br /><br />
+
+    <p>Earn on your own schedule.</p>
+    <br /><br /><br />
+
+    <button id="section-2-btn">Get Started</button>
+    <a href="{% url 'register' %}">You don't have an account Click Here</a>
+  </div>
+
+  <div id="section-2-div2">
+    <img src="/static/images/drive1.png" alt="" />
+  </div>
+</div>
+
+<div id="section-3">
+  <h1>Why Drive With Us</h1>
+  <div id="section-3-div-1"><img src="/static/images/drive2.svg " alt="" /></div>
+  <div id="section-3-div-2">
+    <div>
+      <h4>
+        Set your own hours <br />
+        You decide when and how often you drive.
+      </h4>
+    </div>
+    <div id="">
+      <h4>
+        Get paid fast <br />
+        Weekly payments in your bank account.
+      </h4>
+    </div>
+    <div id=""> 
+      <h4>
+        Get support at every turn <br> If there’s anything that you need, you can
+        reach us anytime.
+      </h4>
+    </div>
+  </div>
+</div>
 
 
 
 
+<footer class="border">
+  <h1>UBER</h1>
+  <p>Visit Help Center</p>
+
+  <section id="footersection">
+    <div>
+      <h3>Company</h3>
+
+      <ul>
+        <li>About US</li>
+        <li>Our Offerings</li>
+        <li>Investors</li>
+        <li>Newsroom</li>
+        <li>Blog</li>
+        <li>Careers</li>
+
+      </ul>
+    
+    
+    </div>
+    <div>
+      <h3>Products</h3>
+
+      <ul>
+        <li>Ride</li>
+        <li>Drive</li>
+        <li>Eat</li>
+        <li>Gift Cards</li>
+        <li>Uber For Bussiness</li>
+        
+
+      </ul>
+    </div>
+    <div>
+      <h3>Global citizenship</h3>
+
+      <ul>
+        <li>Safety</li>
+        <li>Sustainability</li>
+      
+
+      </ul>
+    </div>
+    <div>
+       <h3>Travel</h3>
+
+       <ul>
+        <li>Reserve</li>
+        <li>Airports</li>
+        <li>Cities</li>
+       </ul>
+    </div>
+  </section>
+</footer>
 
 
-
-
-
-  
-    {% endblock content %}
+{% endblock content %}
