@@ -5,6 +5,12 @@ body{
 }
 
 
+ .nav-item{
+    width: 100px;
+    
+  }
+
+
 
 
 
@@ -45,6 +51,10 @@ body{
 #section1 h1{
     font-weight: bold;
     font-size: 50px;
+}
+
+#section1 p{
+    margin-left: 0px;
 }
 
 #input1{
@@ -286,6 +296,7 @@ footer h1,p{
    display: flex;
    justify-content: space-around;
    list-style: none;
+   
   /* border: 2px solid red ; */
 
 }
@@ -310,10 +321,7 @@ footer h1,p{
     gap: 10px;
   }
 
-  .nav-item{
-    width: 60px;
-    
-  }
+
 
 
   #section1,
@@ -335,8 +343,13 @@ footer h1,p{
   #section5 > div {
     width: 90%;
     margin: 10px 0;
-    text-align: center;
+    /* text-align: center;background-color: black; */
    
+  }
+
+
+  #section1 button{
+    margin: 20px;
   }
 
   #section1 form input,
@@ -344,6 +357,7 @@ footer h1,p{
   #section4 input,
   #section5 input {
     width: 100%;
+    margin: 5px;
   }
 
   #section3-div1 img,
@@ -362,10 +376,18 @@ footer h1,p{
   #use-uber{
     margin-left: 30px;
   }
+
+  
 }
 
 /* Tablet Devices (577px to 768px) */
 @media (max-width: 768px) {
+
+
+
+
+
+
   #section1,
   #section2,
   #section3,
@@ -374,6 +396,7 @@ footer h1,p{
   #footersection {
     flex-direction: column;
     align-items: center;
+    margin: 50px;
   }
 
 
@@ -389,7 +412,7 @@ footer h1,p{
   #section4 > div,
   #section5 > div {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px ;
     text-align: center;
   }
 }
